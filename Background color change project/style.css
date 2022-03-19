@@ -1,0 +1,13 @@
+#btn{
+    text-align: center;
+    margin-left: 48%;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    height: 25px;
+}
+
+body{
+    height: 500px;
+    background-color: aqua;
+
+}
