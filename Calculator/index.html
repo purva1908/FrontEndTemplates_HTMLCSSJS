@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            #clear{
+                width: 169px;
+            }
+
+            .formstyle{
+                width:  170px;
+                height: 270px;
+                margin: auto;
+                border: 2px solid black;
+
+            }
+
+            input{
+                width: 54px;
+                background-color: blue;
+                color: white;
+            }
+
+            #answerstyle{
+                width: 163px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple Calculator Using HTML,CSS & Javascript</h1>
+       <div class="formstyle">
+           <form name="forms">
+              <input type="text" name="answer" id="answerstyle"> <br><br>
+
+              <input type="button" value=" 1 " onclick="forms.answer.value +='1'">
+              <input type="button" value=" 2 " onclick="forms.answer.value +='2'">
+              <input type="button" value=" 3 " onclick="forms.answer.value +='3'">
+              <br><br>
+              <input type="button" value=" 4 " onclick="forms.answer.value +='4'">
+              <input type="button" value=" 5 " onclick="forms.answer.value +='5'">
+              <input type="button" value=" 6 " onclick="forms.answer.value +='6'">
+              <br><br>
+              <input type="button" value=" 7 " onclick="forms.answer.value +='7'">
+              <input type="button" value=" 8 " onclick="forms.answer.value +='8'">
+              <input type="button" value=" 9 " onclick="forms.answer.value +='9'">
+              <br><br>
+              <input type="button" value=" + " onclick="forms.answer.value +='+'">
+              <input type="button" value=" - " onclick="forms.answer.value +='-'">
+              <input type="button" value=" * " onclick="forms.answer.value +='*'">
+              <br><br>
+              <input type="button" value=" / " onclick="forms.answer.value +='/'">
+              <input type="button" value=" 0 " onclick="forms.answer.value +='0'">
+              <input type="button" value=" = " onclick="forms.answer.value =eval(forms.answer.value)"> <!--eval() is bydefault function in js -->
+              <br><br>
+
+              <input type="button" value="Clear All" onclick="forms.answer.value=' ' " id="clear">
+
+           </form>
+       </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
