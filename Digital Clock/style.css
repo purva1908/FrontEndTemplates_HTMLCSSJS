@@ -1,0 +1,79 @@
+body{
+	/*background-color: #d4d4d4;*/
+    opacity: 50px;
+    background-image: url("bgimg2.jpg");
+    background-repeat: no-repeat;
+    background-size:1500px 1200px;
+    
+    
+}
+
+.mid{
+	background-color: black;
+    position: fixed;
+    top: 5%;
+    left: 27%;
+    height: 90%;
+    width: 45%;
+    
+    /* this is what centers your element in the fixed wrapper*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; /* aligns on vertical for column */
+    align-items: center; /* aligns on horizontal for column */
+    
+    /* just for styling to see the limits */
+    border: 5px solid grey;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+
+
+h1{
+	color:white;
+	text-align:center;
+	font-size:45px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#demo{
+	color:white;
+	font-size: 80px;
+	text-align: center;
+  }
+
+
+#demo1{
+	color:white;
+	font-size: 50px;
+	text-align: center;
+  }
+
+  .btn{
+
+  	
+
+  	text-align: center;
+      background: #DFE6ED;
+      background-image: -webkit-linear-gradient(top, #DFE6ED, #B5CDF3);
+      background-image: -moz-linear-gradient(top, #DFE6ED, #B5CDF3);
+      background-image: -ms-linear-gradient(top, #DFE6ED, #B5CDF3);
+      background-image: -o-linear-gradient(top, #DFE6ED, #B5CDF3);
+      background-image: -webkit-gradient(to bottom, #DFE6ED, #B5CDF3);
+    
+      
+   
+      color: #FFFFFF;
+
+      font-size: 20px;
+      -webkit-box-shadow: 1px 1px 20px 0 #000000;
+      -moz-box-shadow: 1px 1px 20px 0 #000000;
+      box-shadow: 1px 1px 20px 0 #000000;
+      text-shadow: 1px 1px 20px #000000;
+      border: solid #D0D6DF 1px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    
+
+  }

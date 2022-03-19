@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clock</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+</style>
+	<script src="digital.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+	<div class="mid">  
+<h1>Digital Clock</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+    showDate(); //we are calling function here cz we want it to invoke and show date at p tag where id=demo1 otherwise we can call it on button also
+</script>
+<!--<button class="btn" onclick="showDate()"> Today's Date</button> -->
+<p>
+<button class="btn" onclick="startTime()">Start</button> 
+<button  class="btn" onclick="stopTime()">Stop</button> </p>
+</div>
+</body>
+</html>
