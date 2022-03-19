@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+<style>
+    @keyframes grow
+    {
+from{
+width: 200px;
+}
+to{
+ width: 1000px;
+}
+ }
+
+#a{
+    height: 200px;
+    width: 200px;
+    animation: grow 3s;
+    background-color: red;
+}
+
+#b{
+    height: 200px;
+    width: 200px;
+    transition: width 3s;
+    background-color: red;
+}
+
+#b:hover{
+    width: 1000px;
+}
+
+
+#c{
+    height: 200px;
+    width: 200px;
+    transition: width 3s;
+    background-color: green;
+    margin-right: 0%;
+}
+
+#c:hover{
+    width: 1000px;
+}
+</style>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+
+    <p>
+        Difference between animation and transition is that when page is load animationstarted automatically but when we do something on specific event transitionwill be work.Here when we hover over div b and c only then transition will work.
+    </p>
+</body>
+
+</html>
