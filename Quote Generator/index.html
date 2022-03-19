@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quotes Generator</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body id="bo">
+    <h1 id="heading">Let's start our <span id="demo"></span> with new quote</h1>
+    <div id="di" class="container">
+      
+      <script>
+        var day = new Date();
+        var hr = day.getHours();
+        if (hr >= 0 && hr < 12) {
+          document.getElementById("demo").innerHTML = "morning";
+        } else if (hr == 12) {
+          document.getElementById("demo").innerHTML = "Noon";
+        } else if (hr >= 12 && hr <= 17) {
+          document.getElementById("demo").innerHTML = "evening";
+        } else {
+          document.getElementById("demo").innerHTML = "night";
+        }
+      </script>
+      <p id="quo"></p>
+      <button id="buttoncolorobj">New Quote</button>
+    </div>
+
+    <script>
+      let buttoncolorobj = document.querySelector("#buttoncolorobj");
+
+      const arrQuotesStored = [
+        "At the end of the day, the goals are simple: safety and security.",
+        "It is the sweet, simple things of life which are the real ones after all. ",
+        "Happiness is an attitude of mind, born of the simple determination to be happy under all outward circumstances.",
+        "Love For All, Hatred For None. ",
+        "Change the world by being yourself.",
+        "Every moment is a fresh beginning. ",
+        "Never regret anything that made you smile.",
+        "Die with memories, not dreams.",
+        "Aspire to inspire before we expire. ",
+        "If opportunity doesn't knock, build a door.",
+      ];
+
+      const backgroundColorArray = [
+        "#fcdada",
+        "#ffa5a5",
+        "#dbf6e9",
+        "#9e9d89",
+        "#f8f5f1",
+        "#ccffbd",
+        "#f3f4ed",
+        "#53354a",
+        "#301b3f",
+        "#f6dfeb",
+      ];
+
+      const divColorArray = [
+        "#f3f4ed",
+        "#e4d3cf",
+        "#b4a5a5",
+        "#f8f5f1",
+        "#f8f4e1",
+        "#c8eed9",
+      ];
+
+      const btnColorArray = ["#3a6351", "#c15050", "#693c72", "#3a6351","#d97642"];
+
+      buttoncolorobj.addEventListener("click", () => {
+        let ranVar =
+          arrQuotesStored[Math.floor(Math.random() * arrQuotesStored.length)];
+
+        document.getElementById("quo").innerHTML = ranVar;
+
+        let ranVarBgColor =
+          backgroundColorArray[
+            Math.floor(Math.random() * backgroundColorArray.length)
+          ];
+        document.body.style.background = ranVarBgColor;
+
+        let ranVarDivColor =
+          divColorArray[Math.floor(Math.random() * divColorArray.length)];
+        document.getElementById("di").style.backgroundColor = ranVarDivColor;
+
+        let ranVarBtnColor =
+          btnColorArray[Math.floor(Math.random() * btnColorArray.length)];
+
+        document.getElementById(
+          "buttoncolorobj"
+        ).style.backgroundColor = ranVarBtnColor;
+      });
+    </script>
+  </body>
+</html>

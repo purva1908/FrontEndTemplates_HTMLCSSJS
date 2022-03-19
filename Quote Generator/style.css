@@ -1,0 +1,52 @@
+.container {
+    text-align: center;
+    height:70%;
+    width:60%;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 255px;
+    background-image: url("morning.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+#bo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+  #id{
+      font-color:white;
+  }
+
+  #heading{
+      text-align: center;
+      width: 100%;
+  }
+
+  #buttoncolorobj{
+      
+
+  	text-align: center;
+      background: #DFE6ED;
+      background-image: -webkit-linear-gradient(top, #DFE6ED, #B5CDF3);
+      background-image: -moz-linear-gradient(top, #DFE6ED, #B5CDF3);
+      background-image: -ms-linear-gradient(top, #DFE6ED, #B5CDF3);
+      background-image: -o-linear-gradient(top, #DFE6ED, #B5CDF3);
+      background-image: -webkit-gradient(to bottom, #DFE6ED, #B5CDF3);
+    opacity: 0.5;
+      position: relative;
+      margin-top: 20%;
+   
+      color: #e46c0a;
+
+      font-size: 20px;
+      -webkit-box-shadow: 1px 1px 20px 0 #000000;
+      -moz-box-shadow: 1px 1px 20px 0 #000000;
+      box-shadow: 1px 1px 20px 0 #000000;
+      text-shadow: 1px 1px 20px #000000;
+      border: solid #D0D6DF 1px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+  }
